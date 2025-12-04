@@ -5,8 +5,6 @@ using ParsingWebSite.Classes;
 ILog log = LogManager.GetLogger(typeof(Program));
 ProgramLogging.ConfigureFileLogging();
 
-log.Debug("Приложение запущено");
-log.Info("Начало работы");
 
 try
 {
@@ -21,6 +19,6 @@ catch (Exception ex)
     log.Debug("Детали ошибки:", ex);
 }
 
-log.Info("Приложение завершено");
+
 Console.WriteLine("Проверьте файл логов в папке 'Logs'");
 Console.ReadKey();
