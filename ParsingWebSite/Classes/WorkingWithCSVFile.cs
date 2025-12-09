@@ -7,8 +7,10 @@ namespace ParsingWebSite.Classes
     internal static class WorkingWithCSVFile
     {
         private static readonly ILog log = LogManager.GetLogger(typeof(Program));
-
-        // Метод для преобразование в csv файл
+        /// <summary>
+        /// Метод для преобразование в csv файл
+        /// </summary>
+        /// <param name="data"></param>
         public static void ExportToCSV(List<string> data)
         {
             log.Info("Создание файла");

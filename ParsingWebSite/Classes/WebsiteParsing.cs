@@ -9,7 +9,12 @@ namespace ParsingWebSite.Classes
     {
         private static readonly ILog log = LogManager.GetLogger(typeof(Program));
 
-        // Метод для загрузки сайта
+        /// <summary>
+        /// Метод для загрузки сайта
+        /// </summary>
+        /// <param name="url"></param>
+        /// <returns></returns>
+        /// <exception cref="Exception"></exception>
         public static HtmlDocument GetDocument(string url)
         {
             try
@@ -28,7 +33,11 @@ namespace ParsingWebSite.Classes
 
             }
         }
-
+        /// <summary>
+        /// Метод для получения количества страниц таблицы
+        /// </summary>
+        /// <param name="url"></param>
+        /// <returns></returns>
         public static int GetCountPage(string url)
         {
             int countPage = 0;
@@ -57,7 +66,11 @@ namespace ParsingWebSite.Classes
             return countPage;
         }
 
-        // Метод получения конкретных данных с сайта
+        /// <summary>
+        /// Метод получения конкретных данных с сайта
+        /// </summary>
+        /// <param name="url"></param>
+        /// <returns></returns>
         public static List<string> GetLinks(string url)
         {
             int countPage = GetCountPage(url);

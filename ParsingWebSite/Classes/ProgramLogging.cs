@@ -7,7 +7,9 @@ namespace ParsingWebSite.Classes
 {
     internal static class ProgramLogging
     {
-        // Метод настройки создания логов
+        /// <summary>
+        /// Метод настройки создания логов
+        /// </summary>
         public static void ConfigureFileLogging()
         {
             var hierarchy = (Hierarchy)LogManager.GetRepository();
