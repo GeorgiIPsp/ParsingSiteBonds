@@ -1,6 +1,7 @@
 ﻿using HtmlAgilityPack;
 using log4net;
 using System.Collections.Concurrent;
+using System.Data;
 using System.Security.Policy;
 
 namespace ParsingWebSite.Classes
@@ -11,7 +12,7 @@ namespace ParsingWebSite.Classes
 
         /// <summary>
         /// Метод для загрузки сайта
-        /// </summary>
+        /// </summary> 
         /// <param name="url"></param>
         /// <returns></returns>
         /// <exception cref="Exception"></exception>
@@ -28,7 +29,7 @@ namespace ParsingWebSite.Classes
             catch (Exception ex)
             {
                 Console.WriteLine("Проверьте подключение к интернету или правильность ссылки на сайт!");
-                log.Error("Проверьте подключение к интернету или правильность ссылки на сайт! Подробнее: ", ex);
+                log.Error("Проверьте подключение к интернету или правильность ссылки на сайт!");
                 throw new Exception("Проверьте подключение к интернету или правильность ссылки на сайт!");
 
             }
@@ -82,7 +83,8 @@ namespace ParsingWebSite.Classes
 
             int countPageReady = 0;
             var pageResults = new List<string>[countPage];
-
+            bool dataTrue = false;
+            int countCol = 0;
             Parallel.For(0, countPage, new ParallelOptions { MaxDegreeOfParallelism = 30 }, i =>
             {
                 Random next = new Random();
@@ -104,6 +106,7 @@ namespace ParsingWebSite.Classes
                         log.Info("Получение заголовка таблицы");
                         if (colth != null && colth.Count > 0)
                         {
+                            countCol = colth.Count;
                             log.Info("Сохранение заголовка");
                             foreach (var column in colth)
                             {
@@ -118,6 +121,7 @@ namespace ParsingWebSite.Classes
 
                     if (col != null && col.Count > 0)
                     {
+                        dataTrue = true;
                         Interlocked.Increment(ref countPageReady);
                         foreach (var column in col)
                         {
@@ -148,10 +152,19 @@ namespace ParsingWebSite.Classes
                     dataLinks.AddRange(pageData);
                 }
             }
+            if (dataTrue)
+            {
+                WorkingWithCSVFile.ExportToCSV(dataLinks, countCol);
 
-            log.Info("Успешное получение данных!");
-            Console.WriteLine("Успешное получение данных!");
-            return dataLinks.ToList();
+                log.Info("Успешное получение данных!");
+                Console.WriteLine("Успешное получение данных!");
+            }
+            else
+            {
+                log.Warn("Не удалось сохранить данные!");
+                Console.WriteLine("Не удалось сохранить данные!");
+            }
+                return dataLinks.ToList();
         }
 
     }
