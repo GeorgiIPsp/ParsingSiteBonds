@@ -9,7 +9,7 @@ ProgramLogging.ConfigureFileLogging();
 try
 {
     var dataTable = WebsiteParsing.GetLinks("https://www.wienerborse.at/en/bonds/");
-    WorkingWithCSVFile.ExportToCSV(dataTable);
+    
 
     log.Info("Данные успешно получены и экспортированы");
 }
