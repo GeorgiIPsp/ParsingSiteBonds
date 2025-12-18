@@ -11,7 +11,7 @@ namespace ParsingWebSite.Classes
         /// Метод для преобразование в csv файл
         /// </summary>
         /// <param name="data"></param>
-        public static void ExportToCSV(List<string> data)
+        public static void ExportToCSV(List<string> data, int countCol)
         {
             log.Info("Создание файла");
             string nameFiles = $"{DateTime.Now.ToShortDateString()}.csv";
@@ -38,7 +38,7 @@ namespace ParsingWebSite.Classes
                         csv.WriteField(Data);
                         countColumn++;
 
-                        if (countColumn == 9)
+                        if (countColumn == countCol)
                         {
                             csv.NextRecord();
                             countColumn = 0;

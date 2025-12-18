@@ -3,6 +3,18 @@
   "WorkspaceRootPath": "C:\\Users\\georg\\source\\repos\\ParsingWebSite\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{9E4F1E6C-F8CB-40FB-9672-B8E7AB343E32}|ParsingWebSite\\ParsingWebSite.csproj|c:\\users\\georg\\source\\repos\\parsingwebsite\\parsingwebsite\\classes\\websiteparsing.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9E4F1E6C-F8CB-40FB-9672-B8E7AB343E32}|ParsingWebSite\\ParsingWebSite.csproj|solutionrelative:parsingwebsite\\classes\\websiteparsing.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9E4F1E6C-F8CB-40FB-9672-B8E7AB343E32}|ParsingWebSite\\ParsingWebSite.csproj|c:\\users\\georg\\source\\repos\\parsingwebsite\\parsingwebsite\\logs\\logs-18.12.2025.log||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{9E4F1E6C-F8CB-40FB-9672-B8E7AB343E32}|ParsingWebSite\\ParsingWebSite.csproj|solutionrelative:parsingwebsite\\logs\\logs-18.12.2025.log||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9E4F1E6C-F8CB-40FB-9672-B8E7AB343E32}|ParsingWebSite\\ParsingWebSite.csproj|c:\\users\\georg\\source\\repos\\parsingwebsite\\parsingwebsite\\classes\\workingwithcsvfile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9E4F1E6C-F8CB-40FB-9672-B8E7AB343E32}|ParsingWebSite\\ParsingWebSite.csproj|solutionrelative:parsingwebsite\\classes\\workingwithcsvfile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{9E4F1E6C-F8CB-40FB-9672-B8E7AB343E32}|ParsingWebSite\\ParsingWebSite.csproj|c:\\users\\georg\\source\\repos\\parsingwebsite\\parsingwebsite\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9E4F1E6C-F8CB-40FB-9672-B8E7AB343E32}|ParsingWebSite\\ParsingWebSite.csproj|solutionrelative:parsingwebsite\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
@@ -14,24 +26,64 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "logs-18.12.2025.log",
+              "DocumentMoniker": "C:\\Users\\georg\\source\\repos\\ParsingWebSite\\ParsingWebSite\\Logs\\logs-18.12.2025.log",
+              "RelativeDocumentMoniker": "ParsingWebSite\\Logs\\logs-18.12.2025.log",
+              "ToolTip": "C:\\Users\\georg\\source\\repos\\ParsingWebSite\\ParsingWebSite\\Logs\\logs-18.12.2025.log",
+              "RelativeToolTip": "ParsingWebSite\\Logs\\logs-18.12.2025.log",
+              "ViewState": "AgIAAGwEAAAAAAAAAAAAAKEEAABPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-12-18T00:13:00.437Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "WorkingWithCSVFile.cs",
+              "DocumentMoniker": "C:\\Users\\georg\\source\\repos\\ParsingWebSite\\ParsingWebSite\\Classes\\WorkingWithCSVFile.cs",
+              "RelativeDocumentMoniker": "ParsingWebSite\\Classes\\WorkingWithCSVFile.cs",
+              "ToolTip": "C:\\Users\\georg\\source\\repos\\ParsingWebSite\\ParsingWebSite\\Classes\\WorkingWithCSVFile.cs",
+              "RelativeToolTip": "ParsingWebSite\\Classes\\WorkingWithCSVFile.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACwAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-11T14:10:52.575Z"
+            },
+            {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "WebsiteParsing.cs",
+              "DocumentMoniker": "C:\\Users\\georg\\source\\repos\\ParsingWebSite\\ParsingWebSite\\Classes\\WebsiteParsing.cs",
+              "RelativeDocumentMoniker": "ParsingWebSite\\Classes\\WebsiteParsing.cs",
+              "ToolTip": "C:\\Users\\georg\\source\\repos\\ParsingWebSite\\ParsingWebSite\\Classes\\WebsiteParsing.cs",
+              "RelativeToolTip": "ParsingWebSite\\Classes\\WebsiteParsing.cs",
+              "ViewState": "AgIAAGMAAAAAAAAAAAAYwHMAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-11T01:17:14.706Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\georg\\source\\repos\\ParsingWebSite\\ParsingWebSite\\Program.cs",
               "RelativeDocumentMoniker": "ParsingWebSite\\Program.cs",
               "ToolTip": "C:\\Users\\georg\\source\\repos\\ParsingWebSite\\ParsingWebSite\\Program.cs",
               "RelativeToolTip": "ParsingWebSite\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAADAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-16T18:46:03.244Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-16T18:46:03.244Z"
             }
           ]
         }
